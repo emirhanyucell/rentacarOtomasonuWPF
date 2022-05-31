@@ -1,0 +1,45 @@
+﻿<Window x:Name="Rent_A_Car" x:Class="RentACar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentACar"
+        mc:Ignorable="d"
+        Title="Rent A Car Otomasyonu" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="276*"/>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="84*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="              Rent A Car " HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="530" Height="57" FontFamily="Lucida Sans Unicode" FontSize="36" Grid.Column="12"/>
+        <Label Content="Araç Modeli :" HorizontalAlignment="Left" Margin="8,94,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="16" Grid.Column="8" Grid.ColumnSpan="3" Height="30" Width="110"/>
+        <Label Content="Araç Markası :" HorizontalAlignment="Left" Margin="8,147,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Sitka Text" Grid.Column="8" Grid.ColumnSpan="3" Height="30" Width="119"/>
+        <Button x:Name="ekle" Content="Araç Ekle" HorizontalAlignment="Left" Margin="120,124,0,0" VerticalAlignment="Top" Click="ekle_Click" Width="90" Height="22" Grid.Column="12"/>
+        <Button x:Name="sil" Content="Araç Sil" Margin="96,124,23,0" VerticalAlignment="Top" Click="sil_Click" Height="22" Grid.Column="13" Grid.ColumnSpan="2"/>
+        <Button x:Name="düzenle" Content="Araç Düzenle" Margin="248,124,69,0" VerticalAlignment="Top" Click="Button_Click" Height="22" Grid.Column="12" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="liste" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="117,257,67,10" Grid.ColumnSpan="4" Grid.Column="10"/>
+        <TextBox x:Name="model" HorizontalAlignment="Left" Margin="116,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="24" Grid.ColumnSpan="3" Grid.Column="10"/>
+        <TextBox x:Name="marka" HorizontalAlignment="Left" Margin="116,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="24" Grid.ColumnSpan="3" Grid.Column="10"/>
+        <Label Content="Araç Numarası :" HorizontalAlignment="Left" Margin="8,198,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="16" Grid.Column="8" Grid.ColumnSpan="3" Height="30" Width="131"/>
+        <TextBox x:Name="plaka" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="116,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" TextChanged="plaka_TextChanged" Height="24" Grid.Column="10"/>
+        <Button x:Name="listtemizle" Grid.Column="12" Content="Listeyi Temizle" HorizontalAlignment="Left" Margin="190,175,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="208" Click="listtemizle_Click" Height="20"/>
+
+    </Grid>
+
+</Window>
